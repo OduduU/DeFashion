@@ -1,0 +1,20 @@
+{
+  "designers": [
+    {
+      "id": 1,
+      "firstName": "Bullion",
+      "lastName": "Umoeka",
+      "email": "bullion.relson@gmail.com",
+      "password": "taiwoMendie"
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "designerId": 1,
+      "category": "corporate",
+      "description": "Na dis one you go dy wear go beta gbedu",
+      "designImg": "image.jpg"
+    }
+  ]
+}
