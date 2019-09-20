@@ -1,0 +1,14 @@
+{
+  "name": "fashion-design",
+  "version": "1.0.0",
+  "description": "Market Place for Fashion Designers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OduduAbasi Umoeka",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.15.1"
+  }
+}

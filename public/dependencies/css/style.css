@@ -1,0 +1,33 @@
+.slideShow {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.overlayButtons{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
+
+#collectionBtn {
+    margin-left: 46%;
+}
+
+#colEdit {
+    float: right;
+}
+
+#colMDelete {
+    float: left;
+}
+
+.modal-header h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.green {
+    background: green;
+    z-index: 1;
+}

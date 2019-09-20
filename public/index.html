@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DeFashion</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dependencies/css/style.css">
+</head>
+<body>
+
+    <!--My navigation bar at the beginning of my site-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand nav-home" href="#">DeFashion</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active nav-home"><a href="#">Home</a></li>
+                </ul>
+            
+                <form class="navbar-form navbar-right" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search Categories" name="search">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Sign in-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Login</h3>
+                    <p>Please fill in this form to become a user.</p>
+                </div>
+                <div class="modal-body">
+                        <form class="animate" action="#">  
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="loginPwd" placeholder="Enter password" name="pwd">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="remember">Remember me</label>
+                                <label><a href="#">Forgot Password?</a></label>
+                            </div>
+                            <button type="submit" id="loginSubmit" class="btn btn-default">Login</button>
+                        </form>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+                </div>
+            </div>
+
+        </div>
+    </div>    
+
+    <!-- Modal for Sign up-->
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Sign Up</h3>
+                    <p>Please fill in this form to become a user.</p>
+                </div>
+                <div class="modal-body">
+                    <form action="http://localhost:3000/designers" method="POST"> 
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="firstName">FirstName:</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="firstName" name="firstName">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="lastName">LastName:</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="lastName" name="lastName">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="signupPwd" placeholder="Password" name="password">
+                        </div>
+                        
+                        <button type="submit" id="createDesigner" class="btn btn-default">Sign Up</button>
+                    </form>
+                </div>    
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+    
+    <!-- handles slideShow -->
+    <div class="container-fluid slideShow">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner ">
+                <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./dependencies/img/slideImg/image1.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+            
+                <div class="item">
+                    <img src="./dependencies/img/slideImg/image2.jpg" alt="Chicago" style="width:100%;">
+                </div>
+                
+                <div class="item">
+                    <img src="./dependencies/img/slideImg/image3.jpg" alt="New york" style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- designers gallery-->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+            <a href="/w3images/lights.jpg" target="_blank">
+                <img src="./dependencies/img/galleryImg/gallery1.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+            <a href="/w3images/nature.jpg" target="_blank">
+                <img src="./dependencies/img/galleryImg/gallery2.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+                <img src="./dependencies/img/galleryImg/gallery3.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+            <a href="/w3images/lights.jpg" target="_blank">
+                <img src="./dependencies/img/galleryImg/gallery4.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+            <a href="/w3images/nature.jpg" target="_blank">
+                <img src="./dependencies/img/galleryImg/gallery5.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+            <a href="/w3images/fjords.jpg" target="_blank">
+                <img src="./dependencies/img/galleryImg/gallery6.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row indexGallery">
+            
+        </div>
+    </div>
+
+   <!-- <div class="card">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./dependencies/jQuery/script.js"></script>
+</body>
+</html>

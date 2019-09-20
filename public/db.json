@@ -1,0 +1,69 @@
+{
+  "designers": [
+    {
+      "id": 1,
+      "firstName": "Odudu",
+      "lastName": "Umoeka",
+      "email": "bullion.relson@gmail.com",
+      "password": "taiwo"
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "designerId": 1,
+      "category": "casuals",
+      "description": "na this one be for gbedu.",
+      "imageUrl": "gallery3.jpg"
+    },
+    {
+      "id": 1,
+      "designerId": 1,
+      "category": "casuals",
+      "description": "na this one be for gbedu.",
+      "imageUrl": "gallery3.jpg"
+    },
+    {
+      "id": 1,
+      "designerId": 2,
+      "category": "casuals",
+      "description": "na this one be for gbedu.",
+      "imageUrl": "gallery3.jpg"
+    },
+    {
+      "description": "betta nonss",
+      "designerId": "",
+      "category": "suit",
+      "imageUrl": "gallery1.jpg",
+      "id": 2
+    },
+    {
+      "description": "mbok",
+      "designerId": "1",
+      "category": "jdj",
+      "imageUrl": "gallery1.jpg",
+      "id": 3
+    },
+    {
+      "description": "jsjjs",
+      "designerId": "1",
+      "category": "hdhj",
+      "imageUrl": "gallery3.jpg",
+      "id": 4
+    },
+    {
+      "description": "shhdh",
+      "designerId": "1",
+      "category": "shsh",
+      "imageUrl": "gallery1.jpg",
+      "id": 5
+    },
+    {
+      "description": "jshdh",
+      "designerId": "1",
+      "category": "jdj",
+      "imageUrl": "gallery1.jpg",
+      "id": 6
+    }
+  ]
+}
