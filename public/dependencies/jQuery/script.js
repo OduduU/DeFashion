@@ -25,7 +25,7 @@ $(document).ready(function () {
                         <a href="#">
                             <img src="./dependencies/img/galleryImg/${src}" alt="Lights" style="width:100%">
                             <div class="caption">
-                                <button data-toggle="modal" data-target="#editModal" id="colEdit" type="button" class="btn btn-primary">EDIT</button>
+                                <button data-toggle="modal" data-target="#editModal" id=" ${data[i].designerId}" type="button" class="btn btn-primary colEdit">EDIT</button>
                                 <button data-toggle="modal" data-target="#deleteModal" id="colDelete"  type="button" class="btn btn-danger">DELETE</button>
                             </div>
                         </a>
@@ -151,6 +151,9 @@ $(document).ready(function () {
             console.log('collectionId:', newUser.id);
         });
     })
+
+    // To delete collection
+    $()
 
     // To navigate to collections html
     $('#nav-collection').click(function(e) {

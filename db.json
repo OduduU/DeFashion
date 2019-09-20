@@ -10,11 +10,25 @@
   ],
   "collections": [
     {
-      "id": 1,
-      "designerId": 1,
-      "category": "corporate",
-      "description": "Na dis one you go dy wear go beta gbedu",
-      "designImg": "image.jpg"
+      "description": "kskd",
+      "designerId": "1",
+      "category": "jdj",
+      "imageUrl": "gallery1.jpg",
+      "id": 1
+    },
+    {
+      "description": "kskd",
+      "designerId": "1",
+      "category": "jdj",
+      "imageUrl": "gallery2.jpg",
+      "id": 1
+    },
+    {
+      "description": "kskd",
+      "designerId": "1",
+      "category": "jdj",
+      "imageUrl": "gallery3.jpg",
+      "id": 1
     }
   ]
 }
